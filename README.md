@@ -1,0 +1,2 @@
+# graphics-Photoshop-Illustrator-InDesign
+create and modify ; frame-border , photo collage , text collage , text effect , skin retouching , edit photography ; remove , delite , change , cut out background ; color change , color correction , color replacement ; cover design for books ; magazine page design , magazine layout ; advertisement , advertising poster , flyer design , advertising illustration ; pattern ; abstract background ; logo , business card ; masking , clipping mask ; invitation , greeting card ; drawing 
