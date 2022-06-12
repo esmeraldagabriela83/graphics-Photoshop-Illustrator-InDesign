@@ -1,0 +1,236 @@
+{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+ list-style-type: none;
+}
+
+
+@media only screen and (max-width: 959px) {
+  html{
+   font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html{
+   font-size: 20px;
+  }
+}
+
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+font-family:Arial, Helvetica , sans-serif;
+background-color: Lavender;
+
+}
+
+/* Style the navigation menu */
+.topnav {
+ /* overflow: hidden; */
+ background-color:LightSlateGrey;
+ position: relative;
+ box-shadow: 0.5px 0.5px 10px gray;
+}
+@media only screen and (min-width: 960px) {
+ .topnav{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+@media only screen and (min-width: 960px) {
+ .topnav #myLinks {
+   display: flex;
+ }
+}
+
+@media only screen and (max-width: 959px) {
+ .topnav #myLinks {
+   display: none;
+ }
+}
+
+/* Style navigation menu links */
+.topnav a {
+ color:Lavender;
+ padding: 15px 20px;
+ text-decoration: none;
+ font-size: 1.25rem;
+ display: block;
+  font-weight: bold;
+}
+
+/* Style the hamburger menu */
+
+@media only screen and (max-width: 959px) {
+ .topnav a.icon {
+   background: DimGrey;
+   display: block;
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+}
+
+@media only screen and (min-width: 960px) {
+ .topnav a.icon {
+   display: none;
+ }
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+ background-color: Lavender;
+ color: DimGrey;
+   transition: 0.5s;
+}
+
+@media only screen and (max-width: 959px) {
+  .topnav #myLinks a:hover {
+    border-bottom:3px solid DimGrey;
+  }
+}
+
+/* Style the active link (or home/logo) */
+.logo {
+ background-color: IndianRed;
+ color: Lavender;
+}
+/*---------------------------content-------------------------------------------------*/
+
+.container {
+  max-width: 1088px;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------*/
+.list-page{
+  /* border:3px solid red; */
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:1em;
+}
+
+
+
+ul li {
+  list-style-type: none;
+}
+
+ul li h4{
+  text-align: center;
+}
+
+ul li a{
+  text-decoration: none;
+  color:LightSlateGrey;
+}
+ul li a:hover{
+color:DimGrey;
+}
+/**/
+
+
+/*-----------------------------------------------------------------------------*/
+/*footer*/
+
+.hidden{
+  display:none;
+}
+footer h3{
+  color:lavender;
+  text-align: center;
+}
+footer a{
+text-decoration: none;
+}
+footer a h3:hover{
+  color:IndianRed;
+}
+
+footer {
+  background-color:LightSlateGrey;
+    padding: 15px 0;
+}
+
+footer #icons {
+  margin-top: 1em;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .footerIcons a {
+  color:lavender;
+  font-size: 3rem;
+}
+
+footer .footerIcons a:hover {
+  color: DimGrey;
+  font-weight: bold;
+}
+
+footer .footerIcons a:active {
+  color: IndianRed;
+  font-weight: bold;
+}
+
+#divSources h5 {
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+#divSources h5 a {
+  color:lavender;
+}
+
+#divSources h5 a:hover {
+  color: DimGrey;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+#divSources h5 a:active {
+  color: IndianRed;
+}
+
+/* media screen for footer  */
+@media screen and (max-width: 959px) {
+  #divSources h5 {
+    text-align: center;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    margin: 0.5em 0;
+  }
+
+  footer #icons {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+  }
+
+  footer #icons div {
+    padding: 0.7em 0;
+  }
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+small{
+  color:lavender;
+}
+/**/
