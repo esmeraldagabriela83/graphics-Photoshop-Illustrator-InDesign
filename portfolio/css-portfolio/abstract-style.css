@@ -109,13 +109,20 @@ background-color: Lavender;
   max-width: 1088px;
   margin: 0 auto;
   padding: 0 1em;
-  border:3px solid red;
+  /* border:3px solid red; */
 }
 
 /*---------------------------------content-------------------------------------------*/
 h3{
   color:LightSlateGrey;
   text-align: center;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* w3 school  slideshow*/
@@ -129,12 +136,12 @@ h3{
 }
 
 /* Hide the images by default */
-.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6{
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides01, .mySlides02, .mySlides03, .mySlides04{
   display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5, .prev6, .next6{
+.prev, .next, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5, .prev6, .next6, .prev7, .next7, .prev8, .next8, .prev01, .next01{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -150,25 +157,25 @@ h3{
 }
 
 /* Position the "next button" to the right */
-.next, .next2, .next3, .next4, .next5, .next6 {
+.next, .next2, .next3, .next4, .next5, .next6, .next7, .next8, .next01{
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .prev2:hover, .prev3:hover, .prev4:hover, .prev5:hover, .prev6:hover{
+.prev:hover, .prev2:hover, .prev3:hover, .prev4:hover, .prev5:hover, .prev6:hover, .prev7:hover, .prev8:hover, .prev01:hover{
   background-color:DimGrey;
 }
 
-.next:hover, .next2:hover, .next3:hover, .next4:hover, .next5:hover, .next6:hover{
+.next:hover, .next2:hover, .next3:hover, .next4:hover, .next5:hover, .next6:hover, .next7:hover, .next8:hover, .next01:hover{
   background-color:DimGrey;
 }
 
 /* The dots/bullets/indicators */
-.dot, .dot2, .dot3, .dot4, .dot5 , .dot6{
+.dot, .dot2, .dot3, .dot4, .dot5 , .dot6, .dot7, .dot8, .dot01, .dot02, .dot03, .dot04{
   cursor: pointer;
   height: 1.5em;
-  width: 1.5em;
+  width: 3em;
   margin: 0 5px;
   padding:0.5em 0.15em 0.15em 0.15em;
   background-color: LightSlateGrey;
@@ -177,17 +184,18 @@ h3{
   display: inline-block;
   transition: background-color 0.6s ease;
   margin-bottom: 1.5em;
+  box-shadow: 0.25px 0.25px 5px gray;
 }
 
-.active, .active2, .active3, .active4, .active5, .active6{
+.active, .active2, .active3, .active4, .active5, .active6, .active7, .active8, .active01, .active02, .active03, .active04{
   background-color: DimGrey;
 }
 
-.dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover{
+.dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover, .dot7:hover, .dot8:hover, .dot01:hover, .dot02:hover, .dot03:hover, .dot04:hover{
   background-color: DimGrey;
 }
 
-.dot:active, .dot2:active, .dot3:active, .dot4:active, .dot5:active, .dot6:active{
+.dot:active, .dot2:active, .dot3:active, .dot4:active, .dot5:active, .dot6:active, .dot7:active, .dot8:active, .dot01:active, .dot02:active, .dot03:active, .dot04:active{
   background-color: IndianRed;
 }
 

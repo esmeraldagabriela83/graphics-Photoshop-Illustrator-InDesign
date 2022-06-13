@@ -108,6 +108,8 @@ background-color: Lavender;
 .container {
   max-width: 1088px;
   margin: 0 auto;
+  padding: 0 1em;
+  /* border:3px solid yellow; */
 }
 
 /*---------------------------------content-------------------------------------------*/
@@ -115,9 +117,107 @@ h3{
   color:LightSlateGrey;
   text-align: center;
 }
-/**/
+/*---------------------------------------------------------------------------------------------------------content*/
 
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
+/* w3 school  slideshow*/
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2{
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev1, .next1{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: lavender;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next1{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover{
+  background-color:DimGrey;
+}
+
+.next1:hover{
+  background-color:DimGrey;
+}
+
+/* The dots/bullets/indicators */
+.dot1, .dot2{
+  cursor: pointer;
+  height: 1.5em;
+  width: 3em;
+  margin: 0 5px;
+  padding:0.5em 0.15em 0.15em 0.15em;
+  background-color: LightSlateGrey;
+  color:lavender;
+  border-radius: 15%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 1.15em;
+  box-shadow: 0.25px 0.25px 5px gray;
+}
+
+#original-photo{
+    padding:0.5em 1em 0.15em 0.55em;
+}
+
+.active1, .active2{
+  background-color: DimGrey;
+}
+
+.dot1:hover, .dot2:hover{
+  background-color: DimGrey;
+}
+
+.dot1:active, .dot2:active{
+  background-color: IndianRed;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* w3 school  slideshow*/
+
+/*---------------------------------------------------------------------------------------------------------content*/
 /*-----------------------------------------------------------------------------*/
 /*footer*/
 
