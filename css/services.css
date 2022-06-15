@@ -133,6 +133,7 @@ ul li h4{
 ul li a{
   text-decoration: none;
   color:LightSlateGrey;
+  font-size: 1.25rem;
 }
 ul li a:hover{
 color:DimGrey;

@@ -121,6 +121,7 @@ background-color: Lavender;
   flex-direction: column;
   height: 100vh;
   padding:1em;
+  font-size: 1.25rem;
 }
 h3{
   color:DimGrey;

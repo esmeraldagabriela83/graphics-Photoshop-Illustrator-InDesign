@@ -1,0 +1,311 @@
+{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+ list-style-type: none;
+}
+
+@media only screen and (max-width: 959px) {
+  html{
+   font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html{
+   font-size: 20px;
+  }
+}
+
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+font-family:Arial, Helvetica , sans-serif;
+background-color: Lavender;
+
+}
+
+/* Style the navigation menu */
+.topnav {
+ /* overflow: hidden; */
+ background-color:LightSlateGrey;
+ position: relative;
+ box-shadow: 0.5px 0.5px 10px gray;
+}
+@media only screen and (min-width: 960px) {
+ .topnav{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+@media only screen and (min-width: 960px) {
+ .topnav #myLinks {
+   display: flex;
+ }
+}
+
+@media only screen and (max-width: 959px) {
+ .topnav #myLinks {
+   display: none;
+ }
+}
+
+/* Style navigation menu links */
+.topnav a {
+ color:Lavender;
+ padding: 15px 20px;
+ text-decoration: none;
+ font-size: 1.25rem;
+ display: block;
+  font-weight: bold;
+}
+
+/* Style the hamburger menu */
+
+@media only screen and (max-width: 959px) {
+ .topnav a.icon {
+   background: DimGrey;
+   display: block;
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+}
+
+@media only screen and (min-width: 960px) {
+ .topnav a.icon {
+   display: none;
+ }
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+ background-color: Lavender;
+ color: DimGrey;
+   transition: 0.5s;
+}
+
+@media only screen and (max-width: 959px) {
+  .topnav #myLinks a:hover {
+    border-bottom:3px solid DimGrey;
+  }
+}
+
+/* Style the active link (or home/logo) */
+.logo {
+ background-color: IndianRed;
+ color: Lavender;
+}
+/*----------------------------------------------------------------------------*/
+
+.container {
+  max-width: 1088px;
+  margin: 0 auto;
+  padding:1em;
+}
+
+/*---------------------------------content-------------------------------------------*/
+h3{
+  color:LightSlateGrey;
+  text-align: center;
+  font-size: 1.25rem;
+}
+/*-----------------------------------------------------------------------------------content*/
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* w3 school  slideshow*/
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3, .mySlides4{
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev1, .next1{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: lavender;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next1{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover{
+  background-color:DimGrey;
+}
+
+.next1:hover{
+  background-color:DimGrey;
+}
+
+/* The dots/bullets/indicators */
+.dot1, .dot2, .dot3, .dot4{
+  cursor: pointer;
+  height: 1.5em;
+  width: 3em;
+  margin: 0 5px;
+  padding:0.5em 0.15em 0.15em 0.15em;
+  background-color: LightSlateGrey;
+  color:lavender;
+  border-radius: 15%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 1.15em;
+  box-shadow: 0.25px 0.25px 5px gray;
+}
+
+.active1, .active2, .active3, .active4{
+  background-color: DimGrey;
+}
+
+.dot1:hover, .dot2:hover, .dot3:hover, .dot4:hover{
+  background-color: DimGrey;
+}
+
+.dot1:active, .dot2:active, .dot3:active, .dot4:active{
+  background-color: IndianRed;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* w3 school  slideshow*/
+
+
+
+/*-----------------------------------------------------------------------------------content*/
+/*-----------------------------------------------------------------------------*/
+/*footer*/
+
+.hidden{
+  display:none;
+}
+footer h3{
+  color:lavender;
+  text-align: center;
+}
+footer a{
+text-decoration: none;
+}
+footer a h3:hover{
+  color:IndianRed;
+}
+
+footer {
+  background-color:LightSlateGrey;
+    padding: 15px 0;
+}
+
+footer #icons {
+  margin-top: 1em;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .footerIcons a {
+  color:lavender;
+  font-size: 3rem;
+}
+
+footer .footerIcons a:hover {
+  color: DimGrey;
+  font-weight: bold;
+}
+
+footer .footerIcons a:active {
+  color: IndianRed;
+  font-weight: bold;
+}
+
+#divSources h5 {
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+#divSources h5 a {
+  color:lavender;
+}
+
+#divSources h5 a:hover {
+  color: DimGrey;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+#divSources h5 a:active {
+  color: IndianRed;
+}
+
+/* media screen for footer  */
+@media screen and (max-width: 959px) {
+  #divSources h5 {
+    text-align: center;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    margin: 0.5em 0;
+  }
+
+  footer #icons {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+  }
+
+  footer #icons div {
+    padding: 0.7em 0;
+  }
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+small{
+  color:lavender;
+}
+/**/
