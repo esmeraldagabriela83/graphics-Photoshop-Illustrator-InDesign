@@ -155,6 +155,7 @@ footer a h3:hover{
 footer {
   background-color:LightSlateGrey;
     padding: 15px 0;
+    height:40vh;
 }
 
 footer #icons {
