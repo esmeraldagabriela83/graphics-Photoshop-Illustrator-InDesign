@@ -1,4 +1,4 @@
-{
+*{
  box-sizing: border-box;
  margin: 0;
  padding: 0;
@@ -21,9 +21,9 @@
 
 
 body{
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; */
 font-family:Arial, Helvetica , sans-serif;
 background-color: Lavender;
 
@@ -113,6 +113,8 @@ background-color: Lavender;
 
 /*---------------------------------content-------------------------------------------*/
 h3{
+  margin-top:1em;
+  margin-bottom:1em;
   color:LightSlateGrey;
   text-align: center;
   font-size: 1.25rem;
@@ -144,10 +146,10 @@ section{
 /* The dots/bullets/indicators */
 .dot1{
   cursor: pointer;
-  height: 1.5em;
-  width: 3em;
+  height: 2.5em;
+  width: 5em;
   margin: 0 5px;
-  padding:0.5em 0.15em 0.15em 0.15em;
+  padding:0.7em 0.15em 0.15em 0.15em;
   background-color: LightSlateGrey;
   color:lavender;
   border-radius: 15%;
